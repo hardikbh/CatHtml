@@ -38,8 +38,11 @@
                   <input type="text" name="catphotourl" placeholder="cat photo URL" required>
                 <!--You can use radio buttons for questions where you want only one answer out of multiple options.Here is an example of a radio button with the option of cat: <input type="radio"> cat. Remember that input elements are self-closing.-->
                 <!--label is used to make text clicable-->
-                    <label><input type="radio" id="indoor">Indoor</label>
-                    <label><input type="radio" id="outdoor">Outdoor</label>
+                    <fieldset>
+                       <legend>Is your cat an indoor or outdoor cat?</legend>
+                       <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+                       <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    </fieldset>
     </main>
       </body>
 </html>
